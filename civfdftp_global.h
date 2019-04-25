@@ -1,0 +1,12 @@
+#ifndef CIVFDFTP_GLOBAL_H
+#define CIVFDFTP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CIVFDFTP_LIBRARY)
+#  define CIVFDFTPSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CIVFDFTPSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CIVFDFTP_GLOBAL_H
